@@ -64,6 +64,7 @@ ul {
 button {
     background-color: #ed4c6c;
     width: 100px;
+    height: 50px;
     color: #F9FAF8;
     border-radius: 8px;
     border-color: #ed4c6c;
@@ -75,12 +76,16 @@ button {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    height: 475px; /* Adjust the height as needed */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
+
 
 .container2 {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .content {
@@ -165,7 +170,8 @@ button {
     justify-content: center;
     align-items: center;
     background-color: hsl(348, 52%, 38%);
-    height: 50px;
+    height: 30px;
+    color: #E5E7EB
 }
 
 .img1 {

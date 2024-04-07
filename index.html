@@ -4,61 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anna University</title>
+    <title>Exploring Hyperlinks</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="total">
         <div class="header">
-            <img class="img1" src="./images/anna.jpg" alt="Anna University Logo">
-            <ul>
-                <li><a href="https://www.annauniv.edu/cir/">CIR</a></li>
-                <li><a href="https://www.aukdc.edu.in/">AUKDC</a></li>
-                <li><a href="https://vit.ac.in/">A Better University</a></li>
-            </ul>
+            <img class="img1" src="./images/logo.gif" alt="Header Logo">
         </div>
         <div class="container">
             <div class="inside">
-                <div class="text1">Welcome to Anna University</div>
-                <div class="text2">Student sign in</div>
-                <button onclick="window.location.href = 'https://acoe.annauniv.edu/sems/login/student'">Sign in</button>
+                <div class="text1">Welcome to Exploring Hyperlinks</div>
+                <div class="text2">Discover the evolution of hyperlinks and their impact on the web</div>
+                <button id="jumpButton">Jump in</button>
             </div>
-            <div class="img"><img src="./images/anna3.jfif" alt="Anna University Logo"></div>
         </div>
     </div>
-    <div class="container2">
-        <div class="text3">VISIT US</div>
+    <div class="container2" id="startLearning">
+        <div class="text3">LET'S START LEARNING</div>
         <div class="content">
             <div class="info">
-                <img src="./images/ug.png" alt="Undergraduate">
-                <div class="text4">UNDERGRADUATE</div>
+                <a href="concept.html">
+                    <img src="./images/concept.png" alt="Concept of Hyperlinks">
+                    <div class="text4">Concept of Hyperlinks</div>
+                </a>
             </div>
             <div class="info">
-                <img src="./images/pg.jfif" alt="Postgraduate">
-                <div class="text4">POSTGRADUATE</div>
+                <a href="history.html">
+                    <img src="./images/history.jpg" alt="History of Hyperlinks">
+                    <div class="text4">History of Hyperlinks</div>
+                </a>
             </div>
             <div class="info">
-                <img src="./images/phd.jfif" alt="PhD">
-                <div class="text4">PhD</div>
+                <a href="author.html">
+                    <img src="./images/author.jpg" alt="About Author">
+                    <div class="text4">About Author</div>
+                </a>
             </div>  
-            <div class="info">
-                <img src="./images/campus.jfif" alt="Campus Life">
-                <div class="text4">Campus Life</div>
-            </div>
         </div>
     </div>
     <div class="container3">
-        <div class="text5"><em>Give us your money fools! -- C.N. Annadurai</em></div>
-    </div>
-    <div class="container5">
-        <div class="container4">
-            <div class="newsletter-text">Sign up for the newsletter now!</div>
-            <button>Sign up!</button>
-        </div>
-        <div class="text6">Industry Leading Institution ranked top 20 in the country and top 1000 in the world!</div>
+        <div class="text5"><em>Learning is like a bicycle, to keep your balance, you must keep moving... preferably forward, not sideways into a rose bush.</em></div>
     </div>
     <div class="footer">
         <div class="copyright">Copyright © nitishragu12</div>
     </div>
+
+    <script>
+        document.getElementById('jumpButton').addEventListener('click', function() {
+            document.getElementById('startLearning').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept of Hyperlinks</title>
+    <link rel="stylesheet" href="concept.css">
+</head>
+<body>
+    <div class="content">
+        <div class="top">
+            <h1>Concept of Hyperlinks</h1>
+        </div>
+        <div class="container">
+            <h2>Introduction</h2>
+            <p>Hyperlinks are the backbone of the internet, enabling seamless navigation between web pages and resources. They allow users to explore interconnected content and access information with a simple click.</p>
+            
+            <h2>Types of Hyperlinks</h2>
+            <p>There are various types of hyperlinks, each serving a specific purpose:</p>
+            <ul>
+                <li><strong>Text Links:</strong> Hyperlinks embedded within text.</li>
+                <li><strong>Image Links:</strong> Hyperlinks associated with images.</li>
+                <li><strong>Button Links:</strong> Hyperlinks styled as buttons for interaction.</li>
+                <li><strong>Navigation Links:</strong> Hyperlinks used for website navigation menus.</li>
+                <li><strong>Anchor Links:</strong> Hyperlinks that navigate to specific sections within a webpage.</li>
+            </ul>
+            
+            <h2>Example</h2>
+            <p>Below is an example of a text hyperlink:</p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">Example of a text hyperlink</a></p>
+            <p>Below is the homepage of the BBC website</p>
+            <img src="./images/bbc.png" alt="Homepage of BBC">
+            <p>It contains many links that point not only to multiple news stories, but also different areas of the site, login/registration pages, and more.</p>
+            
+            <h2>Importance of Hyperlinks</h2>
+            <p>Hyperlinks play a crucial role in:</p>
+            <ul>
+                <li>Enhancing user experience by facilitating easy navigation.</li>
+                <li>Promoting content discoverability and information accessibility.</li>
+                <li>Supporting search engine optimization (SEO) efforts by improving website visibility.</li>
+                <li>Encouraging engagement and interaction on websites.</li>
+            </ul>
+
+            <h2>Implementation in Web Development</h2>
+            <p>In web development, hyperlinks are implemented using HTML anchor tags (<code>&lt;a&gt;</code>) and the <code>href</code> attribute to specify the URL of the destination. For example:</p>
+            <pre class="code-snippet">
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+            </pre>
+            <p>This creates a clickable link that directs users to the specified URL when clicked.</p>
+
+            <p>Furthermore, web developers often use CSS to style hyperlinks, making them more visually appealing and consistent with the overall design of the website. This can include changing the color, size, and font of the hyperlink text, as well as adding hover effects to indicate interactivity.</p>
+
+            <h2>Implementation in Browsers</h2>
+            <p>From the browser's perspective, when a hyperlink is clicked, it triggers an HTTP request to the server hosting the linked resource. The server then responds with the corresponding content, which is rendered by the browser for the user to view.</p>
+            <p>Modern browsers support various features related to hyperlinks, such as tabbed browsing, history navigation, and bookmarking. These features enhance the user's ability to manage and organize their browsing experience, allowing for efficient navigation between different websites and pages.</p>
+            
+            <p>Moreover, browsers often provide developer tools that allow web developers to inspect and debug hyperlinks within their web applications. These tools enable developers to identify issues with hyperlink behavior, monitor network requests, and optimize performance for better user experience.</p>
+
+            <p>With the advent of HTML5 and modern web technologies, hyperlinks have evolved to support advanced features such as cross-origin resource sharing (CORS), which allows web pages to request resources from other domains, and the <code>download</code> attribute, which enables the downloading of linked resources such as files and documents.</p>
+        </div>
+    </div>
+    <button id="backToTopBtn" title="Go to top">Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

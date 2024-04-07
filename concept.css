@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.top {
+    background-color: hsl(348, 52%, 25%);
+    color: #E5E7EB;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.container ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.container li {
+    margin-bottom: 5px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.code-snippet {
+    background-color: #f4f4f4;
+    padding: 10px;
+    overflow-x: auto;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* concept.css */
+
+#backToTopBtn {
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position, so it stays in place when scrolling */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    z-index: 99; /* Ensure the button appears on top of other content */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #ed4c6c; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    font-size: 16px; /* Button text size */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+#backToTopBtn:hover {
+    background-color: #e64263; /* Change background color on hover */
+}
+
