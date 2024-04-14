@@ -1,62 +1,54 @@
-// Get the button element
+// Retrieve the back button element by its ID
 const backButton = document.getElementById('backButton');
 
-// Add a click event listener to the button
+// Listen for click events on the back button to navigate to the home page
 backButton.addEventListener('click', function() {
-    // Navigate back to the home page
-    window.location.href = 'index.html'; // Replace 'index.html' with the actual file name of your home page
+    window.location.href = 'index.html'; // Navigate back to the home page
 });
 
+// Wait until the entire HTML document has been fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-    // Get all skill elements
+    // Retrieve all elements with the class "skill"
     var skills = document.querySelectorAll(".skill");
 
-    // Loop through each skill element
+    // Add mouseover and mouseout event listeners to each skill element
     skills.forEach(function(skill) {
-        // Add mouseover event listener
         skill.addEventListener("mouseover", function() {
-            // Get the skill id
-            var skillId = this.getAttribute("id");
-            // Display skill information based on id
-            showSkillInfo(skillId);
+            var skillId = this.getAttribute("id"); // Get the ID of the hovered skill
+            showSkillInfo(skillId); // Show information for the hovered skill
         });
 
-        // Add mouseout event listener
         skill.addEventListener("mouseout", function() {
-            // Hide skill information
-            hideSkillInfo();
+            hideSkillInfo(); // Hide skill information when mouse is out
         });
     });
 
-    // Function to display skill information
+    // Display skill information based on the provided skill ID
     function showSkillInfo(skillId) {
-        // Get the skill-info element
-        var skillInfo = document.getElementById("skill-info");
-        // Update skill information based on skill id
+        var skillInfo = document.getElementById("skill-info"); // Get the skill-info element
+        // Update the text content of skill-info based on skill ID
         switch(skillId) {
             case "html":
-                skillInfo.textContent = "Started learning HTML this year so I am a beginner in this language ";
+                skillInfo.textContent = "Started learning HTML this year so I am a beginner in this language";
                 break;
             case "css":
-                skillInfo.textContent = "I love CSS because it involves designing the webpage and making it more beautiful hence making front-end my favorite part of the full-stack process";
+                skillInfo.textContent = "I love CSS because it involves designing the webpage...";
                 break;
             case "javascript":
                 skillInfo.textContent = "Fairly new to learning JavaScript so I'm still getting the hang of it";
                 break;
             case "python":
-                skillInfo.textContent = "Having done a fair amount of Python projects, I believe I'm fairly proficient in this language";
+                skillInfo.textContent = "Having done a fair amount of Python projects...";
                 break;
             default:
                 skillInfo.textContent = "Skill information not available.";
         }
-        // Show the skill-info element
-        skillInfo.style.display = "block";
+        skillInfo.style.display = "block"; // Make the skill-info element visible
     }
 
-    // Function to hide skill information
+    // Hide the skill information display
     function hideSkillInfo() {
-        // Hide the skill-info element
         var skillInfo = document.getElementById("skill-info");
-        skillInfo.style.display = "none";
+        skillInfo.style.display = "none"; // Hide the skill-info element
     }
 });

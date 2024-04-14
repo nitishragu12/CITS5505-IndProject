@@ -1,86 +1,95 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* Box model: border and padding included in the element's total width and height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
+/* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    padding: 20px;
+    font-family: Arial, sans-serif; /* Default font family */
+    background-color: #f9f9f9; /* Background color */
+    padding: 20px; /* Padding around the body content */
 }
 
+/* Top section styles */
 .top {
-    background-color: hsl(348, 52%, 25%);
-    color: #E5E7EB;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    display: flex; /* Use flexbox to align items */
-    justify-content: space-between; /* Space between the title and the button */
+    background-color: hsl(348, 52%, 25%); /* Background color */
+    color: #E5E7EB; /* Text color */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center-align content */
+    margin-bottom: 20px; /* Margin at the bottom */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
     align-items: center; /* Center items vertically */
 }
 
+/* Content transition styles */
 .content {
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
 }
 
 .content.fade-out {
-    opacity: 0;
+    opacity: 0; /* Fade out effect */
 }
 
 .top h1 {
-    margin: 0; /* Remove margin to align properly */
-    font-size: 32px;
-    flex-grow: 1; /* Allows the title to take up the available space */
-    text-align: center; /* Center the title */
+    margin: 0; /* Remove margin for proper alignment */
+    font-size: 32px; /* Font size */
+    flex-grow: 1; /* Allow the title to take up available space */
+    text-align: center; /* Center-align the title */
 }
 
+/* Main container styles */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center-align container */
+    padding: 20px; /* Padding around the content */
 }
 
+/* Heading styles */
 .container h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 24px; /* Font size */
+    color: #333; /* Text color */
+    margin-bottom: 20px; /* Margin at the bottom */
 }
 
+/* Paragraph styles */
 .container p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
+    font-size: 16px; /* Font size */
+    color: #555; /* Text color */
+    line-height: 1.6; /* Line height */
+    margin-bottom: 15px; /* Margin at the bottom */
 }
 
+/* Preformatted text styles */
 .container pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    overflow-x: auto;
-    font-size: 14px;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    background-color: #f4f4f4; /* Background color */
+    padding: 10px; /* Padding around the content */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    font-size: 14px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Margin at the bottom */
 }
 
+/* Image styles */
 .container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Maximum width */
+    height: auto; /* Auto height */
+    display: block; /* Block-level element */
+    margin: 0 auto 20px; /* Margin at the bottom */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow effect */
 }
 
+/* Back to home button styles */
 .back-to-home {
     margin: 0; /* Remove margin for alignment */
 }
 
 .home-button {
     padding: 10px 20px; /* Padding around the text */
-    background-color: #ae2c2c; /* Green background */
-    color: white; /* White text */
+    background-color: #ae2c2c; /* Button background color */
+    color: white; /* Text color */
     text-decoration: none; /* Remove underline from links */
     border-radius: 5px; /* Rounded corners */
     font-size: 16px; /* Font size */
@@ -88,30 +97,31 @@ body {
 }
 
 .home-button:hover {
-    background-color: #ae2c2c; /* Green background */
-; /* Darker green background on hover */
+    background-color: #ae2c2c; /* Darker background color on hover */
 }
 
+/* Progress tracker styles */
 #progress-tracker {
-    position: fixed;
-    bottom: 20px; /* Adjust bottom position as needed */
-    right: 20px; /* Adjust right position as needed */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
     z-index: 1000; /* Ensure it's above other content */
     background-color: white; /* Background color for visibility */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Padding around the content */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow effect */
 }
 
+/* Timeline button styles */
 .timeline button {
-    padding: 5px 10px;
-    margin: 5px;
-    background-color: #f0f0f0;
-    border: none;
-    cursor: pointer;
+    padding: 5px 10px; /* Padding around the button */
+    margin: 5px; /* Margin */
+    background-color: #f0f0f0; /* Button background color */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Cursor style */
 }
 
 .timeline button:hover {
-    background-color: #ddd;
+    background-color: #ddd; /* Darker background color on hover */
 }

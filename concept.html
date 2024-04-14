@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concept of Hyperlinks</title>
-    <link rel="stylesheet" href="concept.css">
+    <link rel="stylesheet" href="concept.css"> <!-- Link to external stylesheet -->
 </head>
 <body>
     <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
+        <div class="progress-bar" id="progressBar"></div> <!-- Progress bar container -->
     </div>
     <div class="content">
         <div class="top">
-            <h1>Concept of Hyperlinks</h1>
+            <h1>Concept of Hyperlinks</h1> <!-- Main heading -->
             <div class="back-to-home">
-                <a href="index.html" class="home-button">Home Page</a>
+                <a href="index.html" class="home-button">Home Page</a> <!-- Link back to home page -->
             </div>
         </div>
         <div class="container">
             <h2>Introduction</h2>
             <p>Hyperlinks are fundamental elements of the internet. They connect various resources, enabling users to navigate seamlessly between web pages, documents, and other online content with just a click. Essentially, hyperlinks serve as gateways to the vast network of information that comprises the World Wide Web.</p>
             
+            <!-- Different types of hyperlinks -->
             <h2>Types of Hyperlinks</h2>
             <p>Hyperlinks come in different forms, each catering to specific user interactions and content types:</p>
             <ul>
@@ -35,9 +36,11 @@
             <h2>Example</h2>
             <p>Below is an example of a text hyperlink:</p>
             <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Visit Example.com</a></p>
+            <!-- Example of hyperlink usage -->
             <p>Hyperlinks are extensively utilized across the web. For instance, consider the homepage of the BBC website. It contains numerous hyperlinks directing users to various news stories, sections of the site, login/registration pages, and more, facilitating easy exploration of the site's content.</p>
             <img src="./images/bbc.png" alt="Homepage of BBC">
             
+            <!-- Importance of hyperlinks -->
             <h2>Importance of Hyperlinks</h2>
             <p>The significance of hyperlinks in the online ecosystem cannot be overstated. Here's why hyperlinks are crucial:</p>
             <ul>
@@ -47,32 +50,30 @@
                 <li><strong>Engagement and Interactivity:</strong> Hyperlinks encourage interaction by inviting users to explore additional content, engage with multimedia resources, and participate in online discussions and communities.</li>
             </ul>
 
+            <!-- Implementation in web development -->
             <h2>Implementation in Web Development</h2>
             <p>In web development, hyperlinks are implemented using HTML anchor tags (<code>&lt;a&gt;</code>) and the <code>href</code> attribute to specify the URL of the destination. For example:</p>
             <pre class="code-snippet">
 &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
             </pre>
             <p>This creates a clickable link that directs users to the specified URL when clicked.</p>
-
-            <p>Web developers often use CSS to style hyperlinks, ensuring they align with the overall design aesthetic of the website. Customizations may include adjusting colors, font styles, hover effects, and link behaviors to enhance visual appeal and user experience.</p>
-
-            <h2>Implementation in Browsers</h2>
-            <p>From the browser's perspective, hyperlinks serve as triggers for HTTP requests to retrieve and render content from remote servers. When a user clicks on a hyperlink, the browser initiates an HTTP GET request to the URL specified in the hyperlink's <code>href</code> attribute.</p>
+            
+            <!-- Implementation in browsers -->
             <p>Modern browsers offer an array of features and functionalities related to hyperlinks, including:</p>
             <ul>
-                <li>Tabbed Browsing: Users can open multiple web pages in separate tabs, facilitating multitasking and efficient navigation.</li>
-                <li>History Navigation: Browsers maintain a history of visited web pages, allowing users to revisit previously viewed content using forward and backward navigation buttons.</li>
-                <li>Bookmarking: Users can bookmark favorite web pages for quick access later, organizing their browsing experience.</li>
-                <li>Developer Tools: Browsers provide developer tools for inspecting and debugging hyperlinks, monitoring network requests, and optimizing website performance.</li>
+                <li>Tabbed Browsing</li>
+                <li>History Navigation</li>
+                <li>Bookmarking</li>
+                <li>Developer Tools</li>
             </ul>
             
-            <p>With advancements in web technologies such as HTML5, hyperlinks have evolved to support additional features like cross-origin resource sharing (CORS) and the <code>download</code> attribute for downloading linked files.</p>
-
+            <!-- Interactive example with AJAX -->
             <h2>Interactive Example with AJAX</h2>
             <p>Let's incorporate an interactive example using AJAX (Asynchronous JavaScript and XML) to demonstrate dynamic content loading:</p>
-            <a href="#" id="loadJokeLink">Load Chuck Norris Joke</a>
-            <div id="joke"></div>
-
+            <a href="#" id="loadJokeLink">Load Chuck Norris Joke</a> <!-- Link to load joke -->
+            <div id="joke"></div> <!-- Container to display joke -->
+            
+            <!-- JavaScript code for AJAX example -->
             <script>
             document.getElementById('loadJokeLink').addEventListener('click', function(event) {
                 event.preventDefault(); // Prevent default hyperlink behavior
@@ -89,8 +90,8 @@
             </script>
         </div>
     </div>
-    <button id="backToTopBtn" title="Go to top">Top</button>
-
-    <script src="concept.js"></script>
+    <button id="backToTopBtn" title="Go to top">Top</button> <!-- Back to top button -->
+    
+    <script src="concept.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>

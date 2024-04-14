@@ -1,39 +1,46 @@
+/* Apply box-sizing to all elements */
 * {
     box-sizing: border-box;
 }
 
+/* Styling for images */
 img {
     height: 200px;
     width: 200px;
     border-radius: 8px;
 }
 
+/* Styling for anchor tags */
 a {
     text-decoration: none;
     color: #E5E7EB;
     padding: 12px;
     font-family: Verdana;
-    font-size: 12px;    
+    font-size: 12px;
 }
 
+/* Body styles */
 body {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
+/* Header styles */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Unordered list styles */
 ul {
     display: flex;
     list-style-type: none;
     font-size: 18px;
 }
 
+/* Main container styles */
 .container {
     margin-top: 4em;
     display: flex;
@@ -42,12 +49,14 @@ ul {
     background-color: hsl(348, 52%, 25%);
 }
 
+/* Styles for content inside the main container */
 .container .inside {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
+/* Heading styles */
 .text1 {
     font-size: 48px;
     font-weight: bolder;
@@ -55,12 +64,14 @@ ul {
     font-family: Verdana;
 }
 
+/* Subheading styles */
 .text2 {
     color: #E5E7EB;
     font-size: 18px;
     margin-top: 10px;
 }
 
+/* Button styles */
 button {
     background-color: #ed4c6c;
     width: 100px;
@@ -71,6 +82,7 @@ button {
     margin-top: 10px;
 }
 
+/* Total container styles */
 .total {
     background-color: hsl(348, 52%, 25%);
     border-radius: 8px;
@@ -81,13 +93,14 @@ button {
     align-items: center; /* Center content horizontally */
 }
 
-
+/* Second container styles */
 .container2 {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
 
+/* Content styles */
 .content {
     display: flex;
     align-items: center;
@@ -95,10 +108,12 @@ button {
     gap: 52px;
 }
 
+/* Info styles */
 .info {
     max-width: 200px;
 }
 
+/* Text 3 styles */
 .text3 {
     text-align: center;
     margin-bottom: 15px;
@@ -108,6 +123,7 @@ button {
     font-size: 24px;
 }
 
+/* Text 4 styles */
 .text4 {
     display: flex;
     justify-content: center;
@@ -118,6 +134,7 @@ button {
     color: hsl(348, 52%, 38%);
 }
 
+/* Third container styles */
 .container3 {
     text-align: center;
     display: flex;
@@ -130,6 +147,7 @@ button {
     border-radius: 8px;
 }
 
+/* Fourth container styles */
 .container4 {
     display: flex;
     background-color: hsl(348, 52%, 38%);
@@ -141,22 +159,26 @@ button {
     text-align: center;
 }
 
+/* Newsletter text styles */
 .newsletter-text {
     color: #F9FAF8;
     font-family: Verdana;
     font-size: 12px;
 }
 
+/* Text 5 styles */
 .text5 {
     font-size: 36px;
     color: #ed4c6c;
 }
 
+/* Fifth container styles */
 .container5 {
     display: flex;
     align-items: flex-start;
 }
 
+/* Text 6 styles */
 .text6 {
     margin-top: 85px;
     margin-left: 200px;
@@ -165,6 +187,7 @@ button {
     font-weight: bold;
 }
 
+/* Footer styles */
 .footer {
     display: flex;
     justify-content: center;
@@ -174,9 +197,8 @@ button {
     color: #E5E7EB
 }
 
+/* Image 1 styles */
 .img1 {
     width: 100px;
     height: 70px;
 }
-
-

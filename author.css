@@ -1,159 +1,159 @@
-/* Reset CSS */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* Ensures that padding and border are included in the element's total width and height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
 /* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    padding: 20px;
+    font-family: Arial, sans-serif; /* Sets the default font family */
+    background-color: #f9f9f9; /* Sets the background color for the entire page */
+    padding: 20px; /* Adds padding around the body content */
 }
 
 /* CV container styles */
 .cv-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Sets the maximum width of the CV container */
+    margin: 0 auto; /* Centers the CV container horizontally */
+    padding: 20px; /* Adds padding inside the CV container */
+    background-color: #fff; /* Sets the background color of the CV container */
+    border-radius: 10px; /* Adds rounded corners to the CV container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect to the CV container */
 }
 
 ul {
-    font-size: 16px;
-    color: #555;
-
+    font-size: 16px; /* Sets the font size for unordered lists */
+    color: #555; /* Sets the text color for unordered lists */
 }
 
 /* Header styles */
 .cv-header {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Centers the content of the header */
+    margin-bottom: 20px; /* Adds margin at the bottom of the header */
 }
 
 .cv-header h1 {
-    font-size: 32px;
-    color: #E5E7EB;
-    background-color: hsl(348, 52%, 25%);
-    padding: 20px;
-    border-radius: 10px;
+    font-size: 32px; /* Sets the font size for the header */
+    color: #E5E7EB; /* Sets the text color for the header */
+    background-color: hsl(348, 52%, 25%); /* Sets the background color for the header */
+    padding: 20px; /* Adds padding around the header text */
+    border-radius: 10px; /* Adds rounded corners to the header */
 }
 
 /* Section styles */
 .cv-section {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adds margin at the bottom of each section */
 }
 
 /* Heading styles */
 .cv-heading h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-    margin-top: 20px
+    font-size: 24px; /* Sets the font size for section headings */
+    color: #333; /* Sets the text color for section headings */
+    margin-bottom: 10px; /* Adds margin at the bottom of section headings */
+    margin-top: 20px; /* Adds margin at the top of section headings */
 }
 
 /* Content styles */
 .cv-content {
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    text-justify: inter-word;
+    padding: 20px; /* Adds padding around the content */
+    background-color: #f4f4f4; /* Sets the background color for content sections */
+    border-radius: 5px; /* Adds rounded corners to content sections */
+    text-justify: inter-word; /* Justifies text with additional spacing between words */
 }
 
 .cv-content p {
-    text-align: justify;
-    text-justify: inter-word; /* Ensures proper spacing between words */
+    text-align: justify; /* Justifies paragraph text */
+    text-justify: inter-word; /* Ensures proper spacing between words in paragraphs */
 }
 
 .cv-heading-ed {
-    margin-top: 40px;
+    margin-top: 40px; /* Adds additional margin at the top of education section */
 }
 
 .cv-content img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    height: 250px;
+    max-width: 100%; /* Sets the maximum width for images to prevent overflow */
+    border-radius: 5px; /* Adds rounded corners to images */
+    margin-bottom: 20px; /* Adds margin at the bottom of images */
+    height: 250px; /* Sets the height for images */
 }
 
-/* styles.css */
+/* Button styles */
 #backButton {
-    background-color: #ae2c2c; /* Button background color */
-    color: #fff; /* Text color */
-    padding: 10px 20px; /* Padding around the button text */
-    font-size: 16px; /* Font size */
-    border: none; /* Remove button border */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    position: fixed; /* Position the button */
+    background-color: #ae2c2c; /* Sets the background color for the button */
+    color: #fff; /* Sets the text color for the button */
+    padding: 10px 20px; /* Adds padding around the button text */
+    font-size: 16px; /* Sets the font size for the button text */
+    border: none; /* Removes button border */
+    border-radius: 5px; /* Adds rounded corners to the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    position: fixed; /* Positions the button */
     bottom: 20px; /* Distance from the bottom of the page */
     right: 20px; /* Distance from the right side of the page */
 }
 
 #backButton:hover {
-    background-color: #0056b3; /* Change button background color on hover */
+    background-color: #0056b3; /* Changes button background color on hover */
 }
+
+/* Skill styles */
 .skill {
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
-    background-color: #e8acac;
-    cursor: pointer;
+    display: inline-block; /* Displays skills horizontally */
+    padding: 5px; /* Adds padding around skills */
+    margin: 5px; /* Adds margin around skills */
+    background-color: #e8acac; /* Sets the background color for skills */
+    cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .skill-info {
-    display: none;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #ae2c2c;
-    border: 3px solid #070505;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    max-width: 300px; 
+    display: none; /* Hides skill information by default */
+    padding: 10px; /* Adds padding around skill information */
+    margin-top: 20px; /* Adds margin at the top of skill information */
+    background-color: #ae2c2c; /* Sets the background color for skill information */
+    border: 3px solid #070505; /* Adds border around skill information */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow effect to skill information */
+    border-radius: 5px; /* Adds rounded corners to skill information */
+    max-width: 300px; /* Sets the maximum width for skill information */
 }
 
 .skill-info p {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #333;
+    font-size: 14px; /* Sets the font size for skill information */
+    line-height: 1.5; /* Sets the line height for skill information */
+    color: #333; /* Sets the text color for skill information */
 }
 
-
-
+/* Paragraph styles */
 .cv-content p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
+    font-size: 16px; /* Sets the font size for paragraph text */
+    color: #555; /* Sets the text color for paragraph text */
+    line-height: 1.6; /* Sets the line height for paragraph text */
+    margin-bottom: 15px; /* Adds margin at the bottom of paragraphs */
 }
 
+/* List styles */
 .cv-content ul {
-    margin-left: 20px;
+    margin-left: 20px; /* Adds margin to the left of unordered lists */
 }
 
 .cv-content li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Adds margin at the bottom of list items */
 }
 
 /* Link styles */
 .cv-content a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
+    color: #007bff; /* Sets the color for links */
+    text-decoration: none; /* Removes default underline for links */
+    font-weight: bold; /* Sets the font weight for links */
 }
 
 .cv-content a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adds underline on hover for links */
 }
 
 .cv-content a {
-    color: #aa2a2a; /* Set link color */
-    text-decoration: none; /* Remove default underline */
+    color: #aa2a2a; /* Sets the color for links */
+    text-decoration: none; /* Removes default underline for links */
 }
 
 .cv-content a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; /* Adds underline on hover for links */
 }
