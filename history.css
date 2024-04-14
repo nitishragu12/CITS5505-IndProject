@@ -16,11 +16,24 @@ body {
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between the title and the button */
+    align-items: center; /* Center items vertically */
+}
+
+.content {
+    transition: opacity 0.5s ease;
+}
+
+.content.fade-out {
+    opacity: 0;
 }
 
 .top h1 {
-    margin: 0;
+    margin: 0; /* Remove margin to align properly */
     font-size: 32px;
+    flex-grow: 1; /* Allows the title to take up the available space */
+    text-align: center; /* Center the title */
 }
 
 .container {
@@ -58,4 +71,47 @@ body {
     margin: 0 auto 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-home {
+    margin: 0; /* Remove margin for alignment */
+}
+
+.home-button {
+    padding: 10px 20px; /* Padding around the text */
+    background-color: #ae2c2c; /* Green background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.home-button:hover {
+    background-color: #ae2c2c; /* Green background */
+; /* Darker green background on hover */
+}
+
+#progress-tracker {
+    position: fixed;
+    bottom: 20px; /* Adjust bottom position as needed */
+    right: 20px; /* Adjust right position as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: white; /* Background color for visibility */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
+
+.timeline button:hover {
+    background-color: #ddd;
 }

@@ -22,6 +22,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+ul {
+    font-size: 16px;
+    color: #555;
+
+}
+
 /* Header styles */
 .cv-header {
     text-align: center;
@@ -54,6 +60,16 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 5px;
+    text-justify: inter-word;
+}
+
+.cv-content p {
+    text-align: justify;
+    text-justify: inter-word; /* Ensures proper spacing between words */
+}
+
+.cv-heading-ed {
+    margin-top: 40px;
 }
 
 .cv-content img {
